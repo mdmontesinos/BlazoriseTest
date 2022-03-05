@@ -5,7 +5,8 @@ When starting the application, the LayoutHeader has a HorizontalHeight of 72px, 
 
 In the first picture, it can clearly be seen that the header is bigger than it should be, and it goes over the the body.
 
-However, when you wiggle around the debug console, essentially changing the screen size a bit, the header gets the correct height, 50px, and remains like that until you reload the app again.
+However, when you wiggle around the debug console, essentially changing the screen size a bit, the header gets the correct height, 50px, and remains like that until you reload the app again. This can be seen in the second picture.
+
 It seems that the initial size depends on the content of the header itself, because if I include an image or big logo in the BarBrand, it increases even more the size.
 
 ### LayoutHeader with incorrect 72px
