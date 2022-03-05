@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+
+<Layout>
+    <LayoutHeader Fixed="true">
+        <Bar Breakpoint="Breakpoint.Tablet" Background="Background.Primary">
+            <BarBrand>
+                <BarLink To="">
+                    <BarLabel>
+                        Brand
+                    </BarLabel>
+                </BarLink>
+            </BarBrand>
+            <BarToggler />
+            <BarMenu>
+                <BarStart>
+                    <BarLabel>
+                        Start
+                    </BarLabel>
+                </BarStart>
+                <BarEnd>
+                    <BarLabel>
+                        End
+                    </BarLabel>
+                </BarEnd>
+            </BarMenu>
+        </Bar>
+    </LayoutHeader>
+
+    <LayoutContent Padding="Padding.Is4.OnX">
+        @Body
+    </LayoutContent>
+
+    <LayoutFooter Display=Display.None.Block.OnTablet>
+        Footer
+    </LayoutFooter>
+</Layout>
+
+@code {
+    [CascadingParameter] protected Theme Theme { get; set; }
+}
